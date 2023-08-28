@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
   <title>Spotify</title>
@@ -13,15 +16,95 @@
   <div id="main">
 
     <main class="debug d-flex">
-      <div class="cta debug">
+      <div class="cta d-flex">
 
+        <div><span>Effettua L'upgrade</span></div>
        </div>
 
-      <aside class="debug">
+      <aside class="">
+        <div class="top debug">
+          <div class="logo-desktop">
+            <img src="img/logo.svg" alt="">
+          </div>
+            <div class="logo-mobile"><img src="img/logo-small.svg" alt=""></div>
+
+            <nav class="nav-main-menu">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                  <img src="img/home.svg" alt="">
+                  <span>Home</span>
+                </a>
+              </li>
+                <li>
+                  <a href="#">
+                  <img src="img/search.svg" alt="">
+                  <span>Cerca</span>
+                </a>
+              </li>
+                <li>
+                  <a href="#">
+                  <img src="img/libreria.svg" alt="">
+                  <span>La tua libreria</span>
+                </a>
+              </li>
+              </ul>
+            </nav>
+
+            <div class="playlist">
+              <div class="playlist-top">TOP</div>
+              <div class="playlist-list">
+                <ul>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                  <li>
+                    <a href="#">Nome Playlist</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+        </div> 
 
       </aside>
 
-      <div class="content debug"></div>
+      <div class="content debug">
+        <div class="menu-nav d-flex">
+          <nav class="menu d-flex">
+            <ul class="d-flex">
+                <li class="active">in evidenza</li>
+                <li>podcast</li>
+                <li>classifiche</li>
+                <li>generi e modi</li>
+                <li>nuove uscite</li>
+                <li>scopri</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="container">
+          <div><span>Recently Played</span></div>
+
+          <div class="card d-flex">
+            <div class="top-card"><img src="img/metal_lifting.jpg" alt=""></div>
+            <div class="bot-card"><span>Heavy Metal</span> <p>Subtitile</p></div>
+          </div>
+
+        </div>
+      </div>
 
     </main>
   
