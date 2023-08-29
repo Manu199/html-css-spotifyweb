@@ -7,7 +7,9 @@
 :root {
   --light-grey: #666;
   --padding: 20px;
-  --active: #A
+  --dark-grey: #282828;
+  --line-grey: #c1c1c1;
+  --active:  #ADFF2F;
 }
 
 body{
@@ -209,6 +211,9 @@ nav .menu {
   flex-direction: column;
 }
 
+.container {
+
+}
 
 
 footer {
@@ -219,24 +224,151 @@ footer {
 .playlist{
   height: 86%;
 }
+
 .player {
   justify-content: space-between;
   align-items: center;
   background-color: #282828;
+  width: 100%;
+  height: 100%;
 }
 .playlist-list{
   overflow: hidden;
   height: calc(100% - 30px);
 }
-.player-song
-.player-controls
+.player-song,
+
 .player-volume {
+  align-items: center;
+  justify-content: center;
+}
+
+.player-song,
+.player-volume {
+  width: 230px;
+  justify-content: space-around;
+}
+
+.player-song .player-song-cover {
+  width: 45px;
+}
+
+.player-song .player-song-cover img{
+  width: 100%;
+}
+
+.player-song .player-song-title h4 a{
+  color: white;
+  font-size: 0.8rem;
+  line-height: 16px;
+}
+
+.player-song .player-song-title p{
+  line-height: 8px;
+}
+
+.player-song .player-song-title p a{
+  font-size: 0.6rem;
+}
+
+.player-song .player-song-icons a{
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.player-song .player-song-title a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.player-controls {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.player-controls .player-controls-icons ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.player-controls .player-controls-icons ul li {
+  margin: 0 20px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.player-controls .player-controls-icons ul li.player-controller-play-ico {
+  font-size: 2rem;
+}
+
+.player-controls .player-controls-icons ul li.player-controller-play-ico:hover {
+  scale: 1.1;
+  color: var(--active);
+}
+
+.player-controls .player-controls-time {
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
 }
 
-.player-controls{
-  justify-content: center;
-  width: 40%;
+.player-controls-time .player-time-min {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.player-bar {
+  background-color: var(--light-grey);
+  height: 4px;
+  width: 85%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.player-bar .bar-time-line {
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  background-color: var(--line-grey);
+  display: flex;
+}
+
+.player-bar:hover .bar-time-line {
+  background-color: var(--active);
+}
+
+.player-bar:hover .bar-time-line .bar-time-line-point {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.player-bar .bar-time-line.perc-20 {
+  width: 20%;
+  border-radius: 4px;
+}
+
+.player .player-volume ul   {
+  list-style: none;
+  color: white;
+  flex-direction: row;
+}
+
+.player .player-volume {
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.player .player-volume ul li {
+  margin-right: 10px;
+  font-size: .9rem;
 }
 
 @media screen and (max-wodth:600px) {
